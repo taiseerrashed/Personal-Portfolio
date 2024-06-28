@@ -1,38 +1,85 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Playwrite+DE+Grund:wght@100..400&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html{
+  scroll-behavior: smooth;
+}
+html::-webkit-scrollbar{
+  width: 0.6rem;
+  background-color: #a908fa;
+}
+html::-webkit-scrollbar-thumb{
+  background-color: #fd09fd;
+  border-radius: 5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  font-weight: 400;
+  position: relative;
+  background-color: #121212 !important;
+  color: #fff !important;
+  overflow-x: hidden;
+  font-family: "Mulish", sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+button {
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: none;
+}
+
+.social-icon a {
+  color: #ffffff;
+  margin-right: 2px;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%; 
+  display: inline-flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  line-height: 1;
+  background: rgba(217, 217, 217, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  position: relative;
+  font-size: 20px;
 }
-
-.App-link {
-  color: #61dafb;
+.social-icon a::before {
+  position: absolute;
+  content: "";
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  transform: scale(0);
+  transition: 0.3s ease-in-out;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.social-icon a:hover::before {
+  transform: scale(1);
+}
+.social-icon a .icon {
+  z-index: 1;
+  transition: 0.3s ease-in-out;
+}
+.social-icon a:hover .icon {
+  filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
 }

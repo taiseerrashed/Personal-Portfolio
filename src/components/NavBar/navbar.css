@@ -1,0 +1,124 @@
+nav.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 18px 0;
+    z-index: 9999;
+    transition: 0.3s ease-in-out;
+}
+nav.navbar.scrolled {
+    background: #121212;
+    padding: 0px 0;
+}
+nav.navbar .navbar-brand span{
+    width: 9%;
+    font-weight: 700;
+    font-size: 40px;
+    color: #fff;
+}
+nav.navbar .navbar-brand .dot {
+    color: #f733f7;
+}
+nav .nav-link {
+    color: #fff !important;
+    font-weight: 400;
+    letter-spacing: 0.8;
+    padding: 0 25px;
+    font-size: 18px;
+    opacity: 0.75;
+}
+nav .nav-link:hover,
+nav .nav-link:active {
+    opacity: 1;
+}
+.navbar-text {
+    display: flex;
+    align-items: center;
+}
+.social-icon {
+    display: block;
+    margin-left: 10px;
+}
+.navbar-text button {
+    font-weight: 700;
+    border: 1px solid #fff;
+    padding: 15px 30px;
+    font-size: 18px;
+    margin-left: 18px;
+    position: relative;
+    background-color: transparent;
+    transition: 0.3s ease-in-out;
+}
+.navbar-text button .connect-btn {
+    color: #fff;
+}
+.navbar-text button::before {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    z-index: -1;
+    transition: 0.3s ease-in-out;
+}
+.navbar-text button:hover .connect-btn  {
+    color: #121212;
+}
+.navbar-text button:hover::before {
+    width: 100%;
+    height: 100%;
+}
+
+.navbar .navbar-toggler-icon {
+    width: 24px;
+    height: 17px;
+    background-image: none;
+    position: relative;
+    border-bottom: 2px solid #fff;
+    transition: all 300ms linear;
+    top: -2px;
+}
+.navbar .navbar-toggler-icon:focus {
+	border-bottom: 2px solid #fff;
+}
+nav.navbar .navbar-toggler-icon:after,
+nav.navbar .navbar-toggler-icon:before {
+	width: 24px;
+	position: absolute;
+	height: 2px;
+	background-color: #fff;
+	top: 0;
+	left: 0;
+	content: '';
+	z-index: 2;
+	transition: all 300ms linear;
+}
+nav.navbar .navbar-toggler-icon:after {
+	top: 8px;
+}
+nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
+	transform: rotate(45deg);
+	background-color: #fff;
+	height: 2px;
+}
+nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
+	transform: translateY(8px) rotate(-45deg);
+	background-color: #fff;
+	height: 2px;
+}
+nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+	border-color: transparent;
+}
+
+@media (max-width: 992px) {
+    .navbar-text button {
+        font-weight: 400;
+        padding: 12px;
+        margin-left: 0;
+    }
+    .social-icon {
+        margin-left: 0;
+    }
+}

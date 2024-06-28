@@ -1,0 +1,74 @@
+.banner {
+    background-image: url(../../assets/img/banner-bg.png);
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 200px 0 100px 0;
+    margin-top: 0;
+}
+.banner .tagline {
+    font-weight: 700;
+    background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
+    padding: 8px 10px;
+    font-size: 20px;
+    display: inline-block;
+    margin-bottom: 15px;
+    letter-spacing: 0.5px;
+}
+.banner h1 {
+    font-size: 50px;
+    line-height: 1;
+    letter-spacing: 0.7px;
+    margin-bottom: 20px;
+}
+.banner p {
+    color: #B8B8B8;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    line-height: 1.5;
+    width: 95%;
+}
+.banner button {
+    color: #fff;
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 50px;
+    letter-spacing: 0.5px;
+    border: 1px solid #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner button i {
+    margin-left: 8px;
+    transition: 0.5s;
+}
+.banner button:hover i {
+    transform: translateY(5px);
+}
+.banner img {
+    animation: updown 3s linear infinite;
+}
+@keyframes updown {
+    0% {
+        transform: translateY(-20px);
+    }
+    50% {
+        transform: translateY(20px);
+    }
+    100% {
+        transform: translateY(-20px);
+    }
+}
+
+@media (max-width: 780px) {
+    .banner img {
+        display: none;
+    }
+}
+@media (max-width: 520px) {
+    .banner h1 {
+        font-size: 35px;
+    }
+}
