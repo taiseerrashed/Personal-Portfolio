@@ -42,17 +42,17 @@ const Skills = () => {
                         <TrackVisibility>
                             {({isVisible})=>
                             <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
-                                <Carousel responsive={responsive} infinite={true} className="skill-slider">
+                                <Carousel responsive={responsive} autoPlay autoPlaySpeed={2000} infinite={true} className="skill-slider">
                                     <div className="skill-item">
-                                        <span className="skill-item-percentage">99%</span>
+                                        <span className="skill-item-percentage">100%</span>
                                         <h5 className="skill-item-title">HTML</h5>
                                     </div>
                                     <div className="skill-item">
-                                        <span className="skill-item-percentage">97%</span>
+                                        <span className="skill-item-percentage">98%</span>
                                         <h5 className="skill-item-title">CSS</h5>
                                     </div>
                                     <div className="skill-item">
-                                        <span className="skill-item-percentage">95%</span>
+                                        <span className="skill-item-percentage">80%</span>
                                         <h5 className="skill-item-title">Bootstrap</h5>
                                     </div>
                                     <div className="skill-item">
@@ -60,8 +60,40 @@ const Skills = () => {
                                         <h5 className="skill-item-title">JavaScript</h5>
                                     </div>
                                     <div className="skill-item">
-                                        <span className="skill-item-percentage">85%</span>
+                                        <span className="skill-item-percentage">90%</span>
                                         <h5 className="skill-item-title">React JS</h5>
+                                    </div>
+                                    <div className="skill-item">
+                                        <span className="skill-item-percentage">90%</span>
+                                        <h5 className="skill-item-title">Next JS</h5>
+                                    </div>
+                                    <div className="skill-item">
+                                        <span className="skill-item-percentage">90%</span>
+                                        <h5 className="skill-item-title">TypeScript</h5>
+                                    </div>
+                                    <div className="skill-item">
+                                        <span className="skill-item-percentage">100%</span>
+                                        <h5 className="skill-item-title">Tailwind CSS</h5>
+                                    </div>
+                                    <div className="skill-item">
+                                        <span className="skill-item-percentage">70%</span>
+                                        <h5 className="skill-item-title">Redux</h5>
+                                    </div>
+                                    <div className="skill-item">
+                                        <span className="skill-item-percentage">98%</span>
+                                        <h5 className="skill-item-title">React hook form</h5>
+                                    </div>
+                                    <div className="skill-item">
+                                        <span className="skill-item-percentage">98%</span>
+                                        <h5 className="skill-item-title">Zod</h5>
+                                    </div>
+                                    <div className="skill-item">
+                                        <span className="skill-item-percentage">85%</span>
+                                        <h5 className="skill-item-title">React Query</h5>
+                                    </div>
+                                    <div className="skill-item">
+                                        <span className="skill-item-percentage">85%</span>
+                                        <h5 className="skill-item-title">Zustand</h5>
                                     </div>
                                 </Carousel>
                             </div>}
