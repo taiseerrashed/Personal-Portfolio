@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+// import { useEffect } from "react";
 import { Col, Container, Nav, Row, Tab } from "react-bootstrap";
 import Section1 from "./Section1";
 import Section2 from "./Section2";
@@ -8,12 +8,12 @@ import "animate.css";
 import TrackVisibility from "react-on-screen";
 
 const Projects = () => {
-    useEffect(() => {
-        window.scrollTo(0,0);
-    }, []);
+    // useEffect(() => {
+    //     window.scrollTo(0,0);
+    // }, []);
 
   return (
-    <section className="projects">
+    <section className="projects" id="projects">
         <Container>
             <Row>
                 <Col>

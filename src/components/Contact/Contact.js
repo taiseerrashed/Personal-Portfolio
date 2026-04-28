@@ -8,7 +8,7 @@ import TrackVisibility from "react-on-screen";
 const Contact = () => {
    
   return (
-    <section className="contact">
+    <section className="contact" id="contact">
         <Container>
             <Row className="align-items-center my-4">
                 <Col size={12} md={6}>

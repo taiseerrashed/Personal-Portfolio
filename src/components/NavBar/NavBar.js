@@ -31,9 +31,11 @@ const NavBar = () => {
         
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
-            <NavLink to="/home" className="nav-link">Home</NavLink>
-            <NavLink to="/skills" className="nav-link">Skills</NavLink>
-            <NavLink to="/projects" className="nav-link">Projects</NavLink>
+            <NavLink to="/" className="nav-link">Home</NavLink>
+            {/* <NavLink to="/#skills" className="nav-link">Skills</NavLink>
+            <NavLink to="/#projects" className="nav-link">Projects</NavLink> */}
+            <a href="#skills" className="nav-link">Skills</a>
+            <a href="#projects" className="nav-link">Projects</a>
           </Nav>
           <div className="navbar-text">
             <div className='social-icon'>
@@ -41,7 +43,7 @@ const NavBar = () => {
               <a href="/"><FaFacebook className="icon" /></a>
               <a href="https://github.com/taiseerrashed"><FaGithub className="icon" /></a>
             </div>
-            <button><NavLink to="/contact" className="connect-btn">Let's Connect</NavLink></button>
+            <button><a href="#contact" className="connect-btn">Let's Connect</a></button>
           </div>
         </Navbar.Collapse>
       </Container>

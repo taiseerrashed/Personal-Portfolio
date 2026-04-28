@@ -31,7 +31,7 @@
     width: 120px;
     height: 120px;
     border-radius: 50%;
-    border: 13px solid #aa367c80;
+    border: 10px solid #aa367c80;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -53,6 +53,9 @@
 
 @media (max-width: 520px) {
     .skill-box {
-        padding: 30px 40px;
+        padding: 25px 15px;
+    }
+    .skill-slider {
+        width: 100%;
     }
 }
