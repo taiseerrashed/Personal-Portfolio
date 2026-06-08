@@ -27,7 +27,7 @@ const Banner = () => {
                                     <Cursor/>
                                 </h1>
                                 <p>I'm in love with front-end web development. I'm passionate for learning new technologies</p>
-                                <a href="https://drive.google.com/file/d/15VTr7GsDM7-pdqd9QOpTGTx_lQRgSw-r/view?usp=drivesdk" target="_blank"  rel="noreferrer">
+                                <a href="https://drive.google.com/file/d/1jzFbCpDUnk9Ns2JwLjD6VvkBxKEBwD6M/view?usp=drive_link" target="_blank"  rel="noreferrer">
                                     Download CV 
                                     <i className="bi bi-download"></i>
                                 </a>
